@@ -1,6 +1,7 @@
 import { MantineProvider } from "@mantine/core";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { AppLayout } from "./layouts/AppLayout";
+
 import { Claims } from "./pages/Claims";
 import { Dashboard } from "./pages/Dashboard";
 import { Incidents } from "./pages/Incidents";
