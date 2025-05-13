@@ -1,54 +1,111 @@
-# React + TypeScript + Vite
+# Plataforma de Administración de Obras de Construcción
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Una aplicación web moderna para la gestión de obras de construcción, desarrollada con React, Vite, y Mantine UI.
 
-Currently, two official plugins are available:
+## Características
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 📊 Dashboard con métricas clave y avance de obra
+- 👥 Gestión de usuarios y roles
+- 📋 Administración de rubros y tareas
+- 📅 Planificación de obra con visualización Gantt
+- ⚠️ Gestión de incidencias
+- 📝 Sistema de reclamos postventa
 
-## Expanding the ESLint configuration
+## Tecnologías Utilizadas
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- React 18
+- TypeScript
+- Vite
+- Mantine UI
+- React Router
+- Tabler Icons
+- Faker.js (para datos de prueba)
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## Requisitos
+
+- Node.js 16+
+- npm o yarn
+
+## Instalación
+
+1. Clonar el repositorio:
+
+```bash
+git clone <url-del-repositorio>
+cd administrative-works
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2. Instalar dependencias:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```bash
+npm install
 ```
+
+3. Iniciar el servidor de desarrollo:
+
+```bash
+npm run dev
+```
+
+## Estructura del Proyecto
+
+```
+src/
+  ├── components/     # Componentes reutilizables
+  ├── layouts/        # Layouts de la aplicación
+  ├── pages/         # Páginas principales
+  ├── services/      # Servicios y datos mock
+  ├── types/         # Definiciones de tipos
+  ├── utils/         # Utilidades
+  └── hooks/         # Custom hooks
+```
+
+## Módulos Principales
+
+1. **Dashboard**
+
+   - Resumen de avance por rubro
+   - Incidencias activas
+   - Contratos en ejecución
+   - Stock crítico
+
+2. **Gestión de Usuarios**
+
+   - CRUD de usuarios
+   - Asignación de roles
+   - Perfiles de usuario
+
+3. **Rubros y Tareas**
+
+   - Categorización por rubro
+   - Seguimiento de tareas
+   - Control de progreso
+
+4. **Planificación**
+
+   - Visualización Gantt
+   - Fases de obra
+   - Cronograma
+
+5. **Incidencias**
+
+   - Registro de incidencias
+   - Seguimiento de estado
+   - Asignación de responsables
+
+6. **Reclamos Postventa**
+   - Formulario de reclamos
+   - Gestión de estados
+   - Comunicación con clientes
+
+## Contribución
+
+1. Fork el proyecto
+2. Crear una rama para tu feature (`git checkout -b feature/AmazingFeature`)
+3. Commit tus cambios (`git commit -m 'Add some AmazingFeature'`)
+4. Push a la rama (`git push origin feature/AmazingFeature`)
+5. Abrir un Pull Request
+
+## Licencia
+
+Este proyecto está bajo la Licencia MIT. Ver el archivo `LICENSE` para más detalles.

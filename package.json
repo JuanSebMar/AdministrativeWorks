@@ -1,5 +1,5 @@
 {
-  "name": "administrativeworks",
+  "name": "administrative-works",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,8 +10,22 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@faker-js/faker": "^9.7.0",
+    "@mantine/carousel": "^8.0.0",
+    "@mantine/code-highlight": "^8.0.0",
+    "@mantine/core": "^8.0.0",
+    "@mantine/dates": "^8.0.0",
+    "@mantine/dropzone": "^8.0.0",
+    "@mantine/form": "^8.0.0",
+    "@mantine/hooks": "^8.0.0",
+    "@mantine/modals": "^8.0.0",
+    "@mantine/notifications": "^8.0.0",
+    "@mantine/tiptap": "^8.0.0",
+    "@tabler/icons-react": "^3.31.0",
     "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react-dom": "^19.1.0",
+    "react-router-dom": "^7.6.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.25.0",
